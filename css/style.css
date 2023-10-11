@@ -1,59 +1,70 @@
-td, th {
-	border: 1px solid;
-  }
-/* 1. Change Font Size and Color */
-.font-style {
-    font-size: 16px;
-    color: blue;
+/* 1. Base styling for the entire page */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+    margin: 0;
+    padding: 0;
+    color: #333;
 }
 
-/* 2. Center Text */
-.center-text {
+/* 2. Styling for the main header */
+h1 {
+    background-color: #2c3e50;
+    color: #ecf0f1;
+    padding: 20px;
+    text-align: center;
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+/* 3. Styling for the table */
+table#planets {
+    width: 80%;
+    margin: 0 auto;
+    border-collapse: collapse;
+}
+
+/* 4. Styling for table header cells */
+table#planets th {
+    background-color: #34495e;
+    color: #ecf0f1;
+    padding: 10px;
+    text-align: center;
+    font-weight: bold;
+}
+
+/* 5. Styling for table data cells */
+table#planets td {
+    padding: 10px;
+    border: 1px solid #dcdcdc;
     text-align: center;
 }
 
-/* 3. Background Color and Padding */
-.bg-style {
-    background-color: lightgray;
-    padding: 10px;
+/* 6. Styling for planet images */
+table#planets img {
+    max-width: 100px;
+    border-radius: 50%; /* To make the images appear circular */
 }
 
-/* 4. Border with Rounded Corners */
-.bordered-box {
-    border: 2px solid black;
-    border-radius: 10px;
+/* 7. Highlighting the first column in a different color for clarity */
+table#planets td:first-child {
+    background-color: #e0e0e0;
+    font-weight: bold;
 }
 
-/* 5. Hover Effect with Color Change */
-.button:hover {
-    background-color: orange;
-    cursor: pointer;
+/* 8. A hover effect for rows to make them more interactive */
+table#planets tr:hover {
+    background-color: #f0db4f;
 }
 
-/* 6. Flex Container Centered */
-.flex-center {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+/* 9. Italicizing the units/measurements in the first column */
+table#planets td:first-child {
+    font-style: italic;
 }
 
-/* 7. Spacing with Margin */
-.spacing {
-    margin: 10px;
-}
-
-/* 8. Transform Scale on Hover */
-.scale-on-hover:hover {
-    transform: scale(1.1);
-}
-
-/* 9. Fixed Width and Height */
-.square-box {
-    width: 100px;
-    height: 100px;
-}
-
-/* 10. Box Shadow */
-.shadow-box {
-    box-shadow: 2px 2px 10px rgba(0,0,0,0.2);
+/* 10. Making table more responsive by centering on smaller screens */
+@media (max-width: 768px) {
+    table#planets {
+        width: 100%;
+    }
 }
