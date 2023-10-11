@@ -1,0 +1,59 @@
+td, th {
+	border: 1px solid;
+  }
+/* 1. Change Font Size and Color */
+.font-style {
+    font-size: 16px;
+    color: blue;
+}
+
+/* 2. Center Text */
+.center-text {
+    text-align: center;
+}
+
+/* 3. Background Color and Padding */
+.bg-style {
+    background-color: lightgray;
+    padding: 10px;
+}
+
+/* 4. Border with Rounded Corners */
+.bordered-box {
+    border: 2px solid black;
+    border-radius: 10px;
+}
+
+/* 5. Hover Effect with Color Change */
+.button:hover {
+    background-color: orange;
+    cursor: pointer;
+}
+
+/* 6. Flex Container Centered */
+.flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* 7. Spacing with Margin */
+.spacing {
+    margin: 10px;
+}
+
+/* 8. Transform Scale on Hover */
+.scale-on-hover:hover {
+    transform: scale(1.1);
+}
+
+/* 9. Fixed Width and Height */
+.square-box {
+    width: 100px;
+    height: 100px;
+}
+
+/* 10. Box Shadow */
+.shadow-box {
+    box-shadow: 2px 2px 10px rgba(0,0,0,0.2);
+}
